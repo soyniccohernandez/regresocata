@@ -10,6 +10,7 @@ body {
 
 .container {
     text-align: center;
+    padding: 20px;
 }
 
 h1 {
@@ -21,21 +22,23 @@ h1 {
 #countdown {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     font-size: 1.5em;
     color: #333;
     flex-wrap: wrap;
-    max-width: 80vw;
+    max-width: 100%;
     margin: auto;
 }
 
 #countdown div {
     background: #ffffff;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 80px; /* Ajusta el ancho mínimo según sea necesario */
+    box-sizing: border-box;
 }
-
 
 #countdown span {
     display: block;
@@ -56,4 +59,26 @@ h1 {
     height: 150px;
     object-fit: cover;
     border: 5px solid #007BFF;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    #countdown {
+        font-size: 1.2em;
+        gap: 5px;
+    }
+
+    #countdown div {
+        padding: 10px;
+        min-width: 60px; /* Ajusta según sea necesario */
+    }
+
+    #welcome-message img {
+        width: 120px;
+        height: 120px;
+    }
 }
