@@ -25,7 +25,6 @@ h1 {
     font-size: 1.5em;
     color: #333;
     flex-wrap: wrap;
-    background: red;
     max-width: 80vw;
     margin: auto;
 }
