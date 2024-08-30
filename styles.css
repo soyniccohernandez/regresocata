@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #007BFF;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+#countdown div {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#countdown span {
+    display: block;
+    text-align: center;
+}
+
+#countdown span:first-child {
+    font-size: 2em;
+    color: #007BFF;
+}
+
+#welcome-message {
+    margin-top: 30px;
+}
+
+#welcome-message img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #007BFF;
+}
